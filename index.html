@@ -3,10 +3,10 @@
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-<script src="https://d3js.org/d3.v4.js"></script>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="https://d3js.org/d3.v4.js"></script>
 
-<h1>Library 1 - Bar Chart</h1>
+<h1>Library 1 - Bar Chart from Chart js </h1>
 <div>2023 Ballon d'Or Ranking by Votes</div>
 <div>
   <canvas id="Barchart"></canvas>
@@ -42,9 +42,9 @@ var data = [
     mode: "number+gauge+delta",
     gauge: { shape: "bullet" },
     delta: { reference: 300 },
-    value: 220,
+    value: 93.47,
     domain: { x: [0, 1], y: [0, 1] },
-    title: { text: "Profit" }
+    title: { text: "Walt Disney Co" }
   }
 ];
 
@@ -52,7 +52,7 @@ var layout = { width: 600, height: 250 };
 Plotly.newPlot('myDiv', data, layout);
 
   </script>
-<h1>Library 3 - </h1>
+<h1>Library 3 - Pie Chart from Google</h1>
 <body>
 <div
 id="myChart" style="width:100%; max-width:600px; height:500px;">
@@ -67,16 +67,16 @@ function drawChart() {
 // Set Data
 const data = google.visualization.arrayToDataTable([
   ['Contry', 'Mhl'],
-  ['Italy',54.8],
-  ['France',48.6],
-  ['Spain',44.4],
-  ['USA',23.9],
-  ['Argentina',14.5]
+  ['Vlasic',51.37],
+  ['Claussen',50.56],
+  ['Mt Olive',48.09],
+  ['Store Brand',48.09],
+  ['Heinz',26.86]
 ]);
 
 // Set Options
 const options = {
-  title:'World Wide Wine Production'
+  title:'Pickle Brand Popularity 2020'
 };
 
 // Draw
@@ -87,11 +87,11 @@ chart.draw(data, options);
 </script>
 
 </body>
-<h1>Library 4 - </h1>
+<h1>Library 4 - Text script from D3.js</h1>
   <body id = "body">
-    This is a use of the D3 Library
+<p>The script below selects the body element and appends a paragraph with the text "Hello World!":</p> 
   </body>
-  <script>
+<script>
 d3.select("body").append("p").text("Hello World!");
 </script>
 </html>
