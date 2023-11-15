@@ -31,18 +31,6 @@
   });
 </script>
 <script>
-const echarts = require('echarts/lib/echarts');
-require('echarts/lib/component/title');
-require('echarts/lib/component/toolbox');
-require('echarts/lib/component/tooltip');
-require('echarts/lib/component/grid');
-require('echarts/lib/component/legend');
-require('echarts/lib/chart/line');
-
-var chartDom = document.getElementById('main');
-var myChart = echarts.init(chartDom);
-var option;
-
 option = {
   color: ['#80FFA5', '#00DDFF', '#37A2FF', '#FF0087', '#FFBF00'],
   title: {
@@ -225,9 +213,6 @@ option = {
     }
   ]
 };
-
-option && myChart.setOption(option);
-
 
 </script>
 <h1>Library 2 - Line Chart</h1>
