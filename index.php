@@ -5,7 +5,8 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src = "https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+
 
 <script>
   const ctx = document.getElementById('Barchart');
@@ -30,7 +31,13 @@
   });
 </script>
 <script>
-  import * as echarts from 'echarts';
+const echarts = require('echarts/lib/echarts');
+require('echarts/lib/component/title');
+require('echarts/lib/component/toolbox');
+require('echarts/lib/component/tooltip');
+require('echarts/lib/component/grid');
+require('echarts/lib/component/legend');
+require('echarts/lib/chart/line');
 
 var chartDom = document.getElementById('main');
 var myChart = echarts.init(chartDom);
@@ -220,6 +227,7 @@ option = {
 };
 
 option && myChart.setOption(option);
+
 
 </script>
 <h1>Library 2 - Line Chart</h1>
